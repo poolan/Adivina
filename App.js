@@ -31,7 +31,7 @@ function PlayScreen() {
     <View style={styles.container}>
       <Text>
         Lets try to retrieve here a food information API and allocate its price
-        into a variable which I need to guess.
+        into asneed to guess.1
       </Text>
     </View>
   );
