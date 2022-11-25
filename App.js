@@ -5,6 +5,18 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
 
+const [keyword, setKeyword] = useState("");
+const [question, setQuestion] = useState([]);
+
+const fetchMeals = () => {
+  fetch(`http://numbersapi.com/random/year?fragment`)
+    .then((response) => response.json())
+    .then((data) => setQuestion(data.meals))
+    .catch((error) => {
+      Alert.alert("Error", error);
+    });
+};
+
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
