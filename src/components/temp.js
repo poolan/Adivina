@@ -23,13 +23,14 @@ export default function App() {
       });
   };
 
-  /*function HomeScreen({ navigation }) {
+  function HomeScreen({ navigation }) {
     return (
       <View style={styles.container}>
-        
+        <Text>Home!</Text>
+        <Button title="Play" onPress={() => navigation.navigate("Play")} />
       </View>
     );
-  }*/
+  }
 
   function PlayScreen() {
     return (
@@ -43,7 +44,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Play" component={PlayScreen} />
       </Stack.Navigator>
     </NavigationContainer>
