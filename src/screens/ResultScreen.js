@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const Result = () => {
+const ResultScreen = () => {
   return (
     <View>
       <Text>This is result</Text>
@@ -9,6 +9,6 @@ const Result = () => {
   );
 };
 
-export default Result;
+export default ResultScreen;
 
 const styles = StyleSheet.create({});
