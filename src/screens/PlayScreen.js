@@ -1,32 +1,34 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
+import { allStyles } from "../styles/allStyles";
 
-const PlayScreen = () => {
+const PlayScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <View style={allStyles.container}>
       <View>
         <Text>How are you doing today buddy?</Text>
       </View>
-      <View style={styles.options}>
-        <Button title="Amazing" />
-        <Button title="Surviving" />
-        <Button title="I've been better" />
-        <Button title="I need ice cream" />
+      <View style={allStyles.options}>
+        <TouchableOpacity>
+          <Text>Amazing</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text>Surviving</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text>I've been better</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text>I need ice cream</Text>
+        </TouchableOpacity>
+      </View>
+      <View>
+        <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
+          <Text>Leave</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
 };
 
 export default PlayScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 40,
-    height: "100%",
-  },
-
-  options: {
-    marginVertical: 10,
-    flex: 1,
-  },
-});

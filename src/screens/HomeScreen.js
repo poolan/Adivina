@@ -1,12 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, View, Button, Image } from "react-native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
+import { allStyles } from "../styles/allStyles";
 import Welcome from "../components/Welcome.js";
-import Navigation from "../components/Navigation.js";
-import PlayScreen from "./PlayScreen.js";
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <View>
+    <View style={allStyles.homeContainer}>
       <Welcome />
       {/* <View>
         <Image
@@ -17,16 +16,16 @@ const HomeScreen = ({ navigation }) => {
           resizeMode="contain"
         />
       </View> */}
-      <Button title="Play!" onPress={() => navigation.navigate("PlayScreen")} />
+      <View>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("PlayScreen")}
+          style={allStyles.homeButton}
+        >
+          <Text>Play!</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
 
 export default HomeScreen;
-
-const styles = StyleSheet.create({
-  image: {
-    height: 280,
-    width: 350,
-  },
-});
