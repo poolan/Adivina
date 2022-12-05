@@ -4,27 +4,30 @@ import { allStyles } from "../styles/allStyles";
 
 const PlayScreen = ({ navigation }) => {
   return (
-    <View style={allStyles.container}>
+    <View style={allStyles.playContainer}>
       <View>
-        <Text>How are you doing today buddy?</Text>
+        <Text style={allStyles.question}>How are you doing today buddy?</Text>
       </View>
-      <View style={allStyles.options}>
-        <TouchableOpacity>
-          <Text>Amazing</Text>
+      <View style={allStyles.answers}>
+        <TouchableOpacity style={allStyles.button}>
+          <Text style={allStyles.buttonText}>Amazing</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text>Surviving</Text>
+        <TouchableOpacity style={allStyles.button}>
+          <Text style={allStyles.buttonText}>Surviving</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text>I've been better</Text>
+        <TouchableOpacity style={allStyles.button}>
+          <Text style={allStyles.buttonText}>I've been better</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text>I need ice cream</Text>
+        <TouchableOpacity style={allStyles.button}>
+          <Text style={allStyles.buttonText}>I need ice cream</Text>
         </TouchableOpacity>
       </View>
-      <View>
-        <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
-          <Text>Leave</Text>
+      <View style={allStyles.bottom}>
+        <TouchableOpacity
+          style={allStyles.secondaryButton}
+          onPress={() => navigation.navigate("HomeScreen")}
+        >
+          <Text style={allStyles.secondaryButtonText}>Leave</Text>
         </TouchableOpacity>
       </View>
     </View>

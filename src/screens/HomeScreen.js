@@ -19,9 +19,9 @@ const HomeScreen = ({ navigation }) => {
       <View>
         <TouchableOpacity
           onPress={() => navigation.navigate("PlayScreen")}
-          style={allStyles.homeButton}
+          style={allStyles.button}
         >
-          <Text>Play!</Text>
+          <Text style={allStyles.buttonText}>Play!</Text>
         </TouchableOpacity>
       </View>
     </View>
