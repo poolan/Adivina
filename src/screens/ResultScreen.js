@@ -5,7 +5,7 @@ import { allStyles } from "../styles/allStyles";
 const ResultScreen = () => {
   return (
     <View>
-      <Text>This is result</Text>
+      <Text>END</Text>
     </View>
   );
 };

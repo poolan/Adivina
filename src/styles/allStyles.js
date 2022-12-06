@@ -1,3 +1,4 @@
+import { BottomTabBarHeightCallbackContext } from "@react-navigation/bottom-tabs";
 import { StyleSheet } from "react-native";
 
 // #feb236 - dark yellow
@@ -6,6 +7,14 @@ import { StyleSheet } from "react-native";
 // #b7d7e8 - light blue
 
 export const allStyles = StyleSheet.create({
+  welcomeBanner: {
+    height: 300,
+    width: "100%",
+    borderRadius: 60,
+    borderColor: "black",
+    borderWidth: 4,
+    marginVertical: 50,
+  },
   homeContainer: {
     height: "100%",
     paddingVertical: 60,
