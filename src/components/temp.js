@@ -22,6 +22,30 @@ export default function App() {
         Alert.alert("Error", error);
       });
   };
+  const Game = () => {
+    fetch(`https://opentdb.com/api.php?amount=1&type=multiple&encode=url3986`)
+      .then((response) => response.json())
+      .then((data) => {
+        setInfo(data.results[0]), setOptions(ShuffledAnswers(data.results[0]));
+      })
+      .catch((error) => {
+        Alert.alert("Error", error.message);
+      });
+  };
+
+  function Game() {
+    useEffect(() => {
+      fetch(`https://opentdb.com/api.php?amount=1&type=multiple&encode=url3986`)
+        .then((response) => response.json())
+        .then((data) => {
+          setInfo(data.results[0]),
+            setOptions(ShuffledAnswers(data.results[0]));
+        })
+        .catch((error) => {
+          Alert.alert("Error", error.message);
+        });
+    }, []);
+  }
 
   function HomeScreen({ navigation }) {
     return (

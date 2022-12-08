@@ -10,10 +10,12 @@ export const allStyles = StyleSheet.create({
   welcomeBanner: {
     height: 300,
     width: "100%",
-    borderRadius: 60,
+    borderRadius: 70,
     borderColor: "black",
     borderWidth: 4,
-    marginVertical: 50,
+    borderTopWidth: 20,
+    borderBottomWidth: 20,
+    marginVertical: 25,
   },
   homeContainer: {
     height: "100%",
@@ -38,12 +40,12 @@ export const allStyles = StyleSheet.create({
   },
   buttonText: {
     color: "black",
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: "600",
   },
   question: {
-    fontSize: 26,
-    marginVertical: 24,
+    fontSize: 24,
+    marginVertical: 12,
     fontStyle: "bold",
   },
   secondaryButton: {
@@ -67,5 +69,8 @@ export const allStyles = StyleSheet.create({
   answers: {
     flex: 1,
     marginVertical: 20,
+  },
+  highScoreText: {
+    alignItem: "center",
   },
 });
