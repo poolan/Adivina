@@ -22,6 +22,11 @@ export default function App() {
         Alert.alert("Error", error);
       });
   };
+
+  // https://opentdb.com/api.php?amount=1&difficulty=easy&type=multiple&encode=url3986  -- easy
+  // https://opentdb.com/api.php?amount=1&difficulty=medium&type=multiple&encode=url3986  -- medium
+  // https://opentdb.com/api.php?amount=1&difficulty=hard&type=multiple&encode=url3986  -- hard
+
   const Game = () => {
     fetch(`https://opentdb.com/api.php?amount=1&type=multiple&encode=url3986`)
       .then((response) => response.json())

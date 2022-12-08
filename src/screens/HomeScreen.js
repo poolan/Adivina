@@ -19,6 +19,12 @@ const HomeScreen = ({ navigation }) => {
         >
           <Text style={allStyles.buttonText}>Play Now!</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("HighScore")}
+          style={allStyles.button}
+        >
+          <Text style={allStyles.buttonText}>High Score Records</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

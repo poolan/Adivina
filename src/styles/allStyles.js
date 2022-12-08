@@ -32,6 +32,34 @@ export const allStyles = StyleSheet.create({
     marginVertical: 12,
     paddingVertical: 12,
   },
+  buttonEasy: {
+    width: "100%",
+    borderRadius: 20,
+    backgroundColor: "#82b74b",
+    alignItems: "center",
+    padding: 14,
+    marginVertical: 12,
+    paddingVertical: 12,
+  },
+  buttonHard: {
+    width: "100%",
+    borderRadius: 20,
+    backgroundColor: "#a96e5b",
+    alignItems: "center",
+    padding: 14,
+    marginVertical: 12,
+    paddingVertical: 12,
+  },
+  buttonMixed: {
+    width: "100%",
+    borderRadius: 20,
+    backgroundColor: "#b8a9c9",
+    alignItems: "center",
+    padding: 14,
+    marginVertical: 12,
+    paddingVertical: 12,
+  },
+
   playContainer: {
     height: "100%",
     paddingVertical: 36,
@@ -72,5 +100,6 @@ export const allStyles = StyleSheet.create({
   },
   highScoreText: {
     alignItem: "center",
+    fontStyle: "bold",
   },
 });
