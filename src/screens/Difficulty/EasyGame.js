@@ -41,8 +41,6 @@ const EasyGame = ({ navigation }) => {
     return options;
   };
 
-  const highlightRightAnswer = () => {};
-
   const choice = (pick) => {
     if (pick === info.correct_answer) {
       setEasyScore(easyScore + 1);
