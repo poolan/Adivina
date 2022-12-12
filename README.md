@@ -1,14 +1,14 @@
-Adivina
+**Adivina**
 
 Welcome to Adivina, a mobile quiz game app built using React Native and Expo.
 
-Features:
+**Features:**
 
 - A variety of fun and challenging quizzes to choose from
 - A user-friendly interface that makes it easy to play the game
 - The ability to chose different difficulties to play
 
-Technologies Used
+**Technologies Used**
 
 - React Native: a popular framework for building native mobile apps using JavaScript
 - Expo: an open-source toolchain for building and deploying React Native apps
@@ -17,7 +17,7 @@ Technologies Used
 - Hooks: we use React hooks to manage state and effects in our app components
 - TouchableOpacity: we use the TouchableOpacity component from React Native to provide touchable feedback for buttons and other interactive elements
 
-How to Play
+**How to Play**
 
 To play the game, simply select a quiz from the list of available difficulties and start answering the questions. Play and try to achieve your highest score for each difficulty, if you
 miss you lose!
