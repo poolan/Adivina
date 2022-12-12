@@ -42,11 +42,15 @@ const MixedGame = ({ navigation }) => {
   const choice = (pick) => {
     if (pick === info.correct_answer) {
       setMixedScore(mixedScore + 1);
-      Game();
+      setTimeout(() => {
+        Game();
+      }, 1000);
     } else {
       setMixedScore(0);
-      navigation.navigate("ResultScreen");
-      Game();
+      setTimeout(() => {
+        navigation.navigate("ResultScreen");
+      }, 1000);
+      // Game();
     }
   };
 

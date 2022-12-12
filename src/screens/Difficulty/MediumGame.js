@@ -44,11 +44,15 @@ const MediumGame = ({ navigation }) => {
   const choice = (pick) => {
     if (pick === info.correct_answer) {
       setMediumScore(mediumScore + 1);
-      Game();
+      setTimeout(() => {
+        Game();
+      }, 1000);
     } else {
       setMediumScore(0);
-      navigation.navigate("ResultScreen");
-      Game();
+      setTimeout(() => {
+        navigation.navigate("ResultScreen");
+      }, 1000);
+      // Game();
     }
   };
 

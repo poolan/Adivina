@@ -41,14 +41,20 @@ const EasyGame = ({ navigation }) => {
     return options;
   };
 
+  const highlightRightAnswer = () => {};
+
   const choice = (pick) => {
     if (pick === info.correct_answer) {
       setEasyScore(easyScore + 1);
-      Game();
+      setTimeout(() => {
+        Game();
+      }, 1000);
     } else {
       setEasyScore(0);
-      navigation.navigate("ResultScreen");
-      Game();
+      setTimeout(() => {
+        navigation.navigate("ResultScreen");
+      }, 1000);
+      // Game();
     }
   };
 

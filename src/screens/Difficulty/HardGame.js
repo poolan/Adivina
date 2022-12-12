@@ -44,11 +44,15 @@ const HardGame = ({ navigation }) => {
   const choice = (pick) => {
     if (pick === info.correct_answer) {
       setHardScore(hardScore + 1);
-      Game();
+      setTimeout(() => {
+        Game();
+      }, 1000);
     } else {
       setHardScore(0);
-      navigation.navigate("ResultScreen");
-      Game();
+      setTimeout(() => {
+        navigation.navigate("ResultScreen");
+      }, 1000);
+      // Game();
     }
   };
 
