@@ -1,6 +1,6 @@
 # [🧠Adivina!](https://user-images.githubusercontent.com/75480642/207144429-f011ff03-15a9-4ec3-a245-8552f7780d51.png)
 
-Welcome to Adivina, a mobile quiz game app built using React Native and Expo.
+Welcome to Adivina, a mobile quiz game app built using React Native and Expo based on the open Trivia Database API's from https://opentdb.com/
 
 ## Features:
 
@@ -23,3 +23,5 @@ To play the game, simply select a quiz from the list of available difficulties a
 miss you lose!
 
 Thank you for playing Adivina! We hope you have a great time and learn something new along the way.
+
+![readmeimages](https://user-images.githubusercontent.com/75480642/207146098-d470d9db-db83-4ff6-8f37-d93d14e83578.png)
